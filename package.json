@@ -1,0 +1,30 @@
+{
+  "name": "mevn-log-reg",
+  "version": "1.0.0",
+  "description": "Log-Reg project with MySql+Express+Vue+Node",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airdy/mevn.github.io.git"
+  },
+  "author": "ruslan pylypchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airdy/mevn.github.io/issues"
+  },
+  "homepage": "https://github.com/airdy/mevn.github.io#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.2",
+    "sequelize": "^5.21.5"
+  }
+}
