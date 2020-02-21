@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/airdy/mevn.github.io.git"
+    "url": "git+https://github.com/airdy/mevn"
   },
   "author": "ruslan pylypchuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/airdy/mevn.github.io/issues"
+    "url": "https://github.com/airdy/mevn/issues"
   },
-  "homepage": "https://github.com/airdy/mevn.github.io#readme",
+  "homepage": "https://github.com/airdy/mevn#readme",
   "dependencies": {
     "bcrypt": "^4.0.0",
     "body-parser": "^1.19.0",
