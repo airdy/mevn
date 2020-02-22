@@ -3,8 +3,10 @@ const users = express.Router();
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-
+const passport = require("passport");
+require('../middleware/passport')(passport);
 const User = require("../models/user");
+
 users.use(cors());
 
 process.env.SECRET_KEY = 'secret';
@@ -59,7 +61,7 @@ users.post('/login', (req, res) => {
                     let token = jwt.sign(user.dataValues, process.env.SECRET_KEY, {
                         expiresIn: "15m"
                     });
-                    res.status(200).json(token)
+                    res.status(200).json(token);
                 }
             } else {
                 res.status(400).json({error: 'User does not exist'})

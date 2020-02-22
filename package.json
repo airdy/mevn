@@ -4,9 +4,11 @@
   "description": "Log-Reg project with MySql+Express+Vue+Node",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -27,9 +29,12 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
     "sequelize": "^5.21.5"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "concurrently": "^5.1.0"
   }
 }

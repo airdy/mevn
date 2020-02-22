@@ -29,5 +29,10 @@ export default new Router({
       name: 'Profile',
       component: Profile,
     },
+    {
+      path: '*',
+      redirect: '/login',
+    },
   ],
 });
+

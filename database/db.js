@@ -1,5 +1,7 @@
 const Sequelize = require("sequelize");
-const db = {};
+const db = {
+    jwt: 'dev-jwt'
+};
 const sequelize = new Sequelize("mevn", "root", "", {
     host: "localhost",
     dialect: 'mysql',
