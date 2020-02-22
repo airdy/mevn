@@ -1,2 +1,3 @@
 1. clone repo and run `npm run inst` to install all dependencies for server and for client
-2. to start app run `npm run dev`
+2. execute db file `mevn.sql` from directory `database`
+3. to start app run `npm run dev`
