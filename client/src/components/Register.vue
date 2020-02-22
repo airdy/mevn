@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <template>
   <div class="container">
     <div class="row">
@@ -14,6 +15,16 @@
               placeholder="Enter email"
             >
           </div>
+          <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            v-model="username"
+            class="form-control"
+            name="username"
+            placeholder="Enter username"
+          >
+        </div>
           <div class="form-group">
             <label for="password">Password</label>
             <input
@@ -48,6 +59,7 @@ export default {
   data() {
     return {
       email: '',
+      username: '',
       password: '',
       bio: '',
     };
@@ -57,6 +69,7 @@ export default {
       axios.post('/users/register',
         {
           email: this.email,
+          username: this.username,
           password: this.password,
           bio: this.bio,
         },

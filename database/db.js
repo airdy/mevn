@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const db = {}
+const db = {};
 const sequelize = new Sequelize("mevn", "root", "", {
     host: "localhost",
     dialect: 'mysql',
@@ -10,9 +10,9 @@ const sequelize = new Sequelize("mevn", "root", "", {
         acquire: 30000,
         idle: 10000
     }
-})
+});
 
-db.sequelize = sequelize
-db.Sequelize = Sequelize
+db.sequelize = sequelize;
+db.Sequelize = Sequelize;
 
-module.exports = db
+module.exports = db;

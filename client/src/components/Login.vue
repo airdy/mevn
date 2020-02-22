@@ -50,11 +50,13 @@ export default {
         {
           email: this.email,
           password: this.password,
+          bio: this.bio,
         },
       ).then((res) => {
         localStorage.setItem('usertoken', res.data);
         this.email = '';
         this.password = '';
+        this.bio = '';
         router.push({ name: 'Profile' });
       }).catch((err) => {
         console.log(err); // eslint-disable-line no-console
