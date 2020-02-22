@@ -6,8 +6,6 @@
   "scripts": {
     "server": "nodemon server.js",
     "client": "npm run start --prefix client",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
@@ -34,7 +32,6 @@
     "sequelize": "^5.21.5"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
     "concurrently": "^5.1.0"
   }
 }
