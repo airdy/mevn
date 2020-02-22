@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon server.js",
-    "inst": "npm install && npm client-isntall",
     "client-install": "npm install --prefix client",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
