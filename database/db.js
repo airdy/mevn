@@ -2,8 +2,8 @@ const Sequelize = require("sequelize");
 const db = {
     jwt: 'dev-jwt'
 };
-const sequelize = new Sequelize("mevn", "admin", "master31323", {
-    host: "database-1.cmxnohksybwi.eu-central-1.rds.amazonaws.com:3306",
+const sequelize = new Sequelize("mevn", "root", "", {
+    host: "localhost",
     dialect: 'mysql',
     operatorsAliases: false,
     pool: {
