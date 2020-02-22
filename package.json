@@ -4,7 +4,9 @@
   "description": "Log-Reg project with MySql+Express+Vue+Node",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/airdy/mevn/issues"
   },
-  "homepage": "https://github.com/airdy/mevn#readme",
+  "homepage": "https://airdy.github.io/mevn",
   "dependencies": {
     "bcrypt": "^4.0.0",
     "body-parser": "^1.19.0",
@@ -26,5 +28,8 @@
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.2",
     "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
